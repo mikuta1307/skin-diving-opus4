@@ -33,6 +33,9 @@ export default function Footer() {
             <p className="footer-copy">
               © 2024 Diving Gear. All rights reserved.
             </p>
+            <p className="footer-disclaimer">
+              ※このサイトは架空のLPです。実在の団体・サービスではありません。
+            </p>
           </div>
         </div>
       </footer>
