@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+const fs = require('fs');
+const path = require('path');
 
 const BASE_PATH = '/skin-diving-opus4';
 const OUT_DIR = 'out';
