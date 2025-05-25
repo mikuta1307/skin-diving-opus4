@@ -1,12 +1,14 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   output: 'export',
-  images: {
-    unoptimized: true,
-  },
   trailingSlash: true,
-  basePath: '',  // 空文字列に
-  assetPrefix: '',  // 空文字列に
-}
+  images: { unoptimized: true },
 
-module.exports = nextConfig
+  // ★ GitHub Pages 用に追加
+  basePath: '/skin-diving-opus4',
+  assetPrefix: isProd ? '/skin-diving-opus4/' : '',
+};
+
+module.exports = nextConfig;
