@@ -34,6 +34,9 @@ jobs:
       - name: Export static files
         run: npm run export                    # ← Next.js の `next export` 等
 
+      - name: Disable Jekyll
+        run: echo "" > ./out/.nojekyll
+
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3 # v3 (内部で artifact v4 を利用)
         with:
