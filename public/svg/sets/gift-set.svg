@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- ギフトボックス背景 -->
+  <rect x="20" y="40" width="160" height="120" rx="10" fill="#FFE0E0" stroke="#FF6B6B" stroke-width="2" opacity="0.3"/>
+  
+  <!-- リボン -->
+  <rect x="90" y="40" width="20" height="120" fill="#FFD54F" opacity="0.5"/>
+  <rect x="20" y="90" width="160" height="20" fill="#FFD54F" opacity="0.5"/>
+  
+  <!-- マスク（エレガントカラー） -->
+  <g transform="translate(100, 70)">
+    <path d="M-30 -10 Q-30 -18, -22 -18 L22 -18 Q30 -18, 30 -10 L30 8 Q30 16, 22 16 L-22 16 Q-30 16, -30 8 Z" 
+          fill="#E91E63" stroke="#AD1457" stroke-width="2"/>
+    <rect x="-20" y="-5" width="12" height="14" rx="3" fill="#FFB6C1" opacity="0.8"/>
+    <rect x="8" y="-5" width="12" height="14" rx="3" fill="#FFB6C1" opacity="0.8"/>
+    <!-- ラインストーン風 -->
+    <circle cx="0" cy="-12" r="2" fill="#FFF" opacity="0.9"/>
+  </g>
+  
+  <!-- スノーケル（パステルカラー） -->
+  <g transform="translate(60, 110)">
+    <rect x="-4" y="-15" width="8" height="35" rx="4" fill="#9C27B0" stroke="#6A1B9A" stroke-width="2"/>
+    <circle cx="0" cy="-20" r="6" fill="#E1BEE7" stroke="#6A1B9A" stroke-width="2"/>
+  </g>
+  
+  <!-- フィン（カラフル） -->
+  <g transform="translate(130, 120)">
+    <path d="M-10 -18 L-10 12 Q-10 20, -5 20 L-2 20 Q3 20, 3 12 L3 -18 Q3 -23, -3.5 -23 Q-10 -23, -10 -18 Z" 
+          fill="#00BCD4" stroke="#00838F" stroke-width="2"/>
+    <path d="M7 -18 L7 12 Q7 20, 12 20 L15 20 Q20 20, 20 12 L20 -18 Q20 -23, 13.5 -23 Q7 -23, 7 -18 Z" 
+          fill="#00BCD4" stroke="#00838F" stroke-width="2"/>
+  </g>
+  
+  <!-- ギフトタグ -->
+  <g transform="translate(150, 50)">
+    <rect x="-20" y="-10" width="40" height="20" rx="3" fill="#FFF" stroke="#FF6B6B" stroke-width="2"/>
+    <circle cx="-15" cy="0" r="2" fill="#FF6B6B"/>
+    <text x="5" y="4" text-anchor="middle" fill="#FF6B6B" font-family="Arial" font-size="8">Gift</text>
+  </g>
+  
+  <!-- ハート -->
+  <g transform="translate(40, 40)">
+    <path d="M0 5 C0 2, 2 0, 5 0 C8 0, 10 2, 10 5 C10 2, 12 0, 15 0 C18 0, 20 2, 20 5 Q20 15, 10 20 Q0 15, 0 5 Z" 
+          fill="#FF6B6B" opacity="0.8"/>
+  </g>
+  
+  <!-- キラキラエフェクト -->
+  <g>
+    <circle cx="30" cy="160" r="1" fill="#FFD54F">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="170" cy="60" r="1" fill="#FFD54F">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="140" r="1.5" fill="#FFD54F">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- 3色カラーパレット（右下） -->
+  <g transform="translate(160, 170)">
+    <circle cx="-10" cy="0" r="5" fill="#E91E63"/>
+    <circle cx="0" cy="0" r="5" fill="#00BCD4"/>
+    <circle cx="10" cy="0" r="5" fill="#9C27B0"/>
+  </g>
+</svg>

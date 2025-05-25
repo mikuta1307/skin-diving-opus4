@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#FFF3E0"/>
+  
+  <!-- ギフトボックス -->
+  <rect x="100" y="120" width="200" height="140" rx="10" fill="#FF6B6B" stroke="#D32F2F" stroke-width="3"/>
+  
+  <!-- リボン（縦） -->
+  <rect x="185" y="120" width="30" height="140" fill="#FFD54F"/>
+  
+  <!-- リボン（横） -->
+  <rect x="100" y="175" width="200" height="30" fill="#FFD54F"/>
+  
+  <!-- リボンの結び目 -->
+  <circle cx="200" cy="120" r="25" fill="#FFC107"/>
+  <path d="M175 95 Q200 110, 225 95" fill="none" stroke="#FFC107" stroke-width="8" stroke-linecap="round"/>
+  <path d="M175 145 Q200 130, 225 145" fill="none" stroke="#FFC107" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- 装備のシルエット（透けて見える） -->
+  <g opacity="0.3">
+    <!-- マスク -->
+    <path d="M140 150 Q140 140, 150 140 L180 140 Q190 140, 190 150 L190 160 Q190 170, 180 170 L150 170 Q140 170, 140 160 Z" fill="#0066CC"/>
+    
+    <!-- スノーケル -->
+    <rect x="195" y="145" width="10" height="30" rx="5" fill="#0066CC"/>
+    
+    <!-- フィン -->
+    <path d="M220 180 L220 210 Q220 220, 230 220 L235 220 Q245 220, 245 210 L245 180" fill="#0066CC"/>
+    <path d="M250 180 L250 210 Q250 220, 260 220 L265 220 Q275 220, 275 210 L275 180" fill="#0066CC"/>
+  </g>
+  
+  <!-- キラキラ -->
+  <g>
+    <path d="M70 80 L75 90 L85 85 L75 90 L70 100 L65 90 L55 85 L65 90 Z" fill="#FFD54F" opacity="0.8"/>
+    <path d="M320 70 L325 80 L335 75 L325 80 L320 90 L315 80 L305 75 L315 80 Z" fill="#FFD54F" opacity="0.8"/>
+    <path d="M350 200 L353 206 L359 203 L353 206 L350 212 L347 206 L341 203 L347 206 Z" fill="#FFD54F" opacity="0.6"/>
+    <path d="M50 220 L53 226 L59 223 L53 226 L50 232 L47 226 L41 223 L47 226 Z" fill="#FFD54F" opacity="0.6"/>
+  </g>
+  
+  <!-- メッセージタグ -->
+  <rect x="280" y="180" width="80" height="50" rx="5" fill="#FFFFFF" stroke="#FF6B6B" stroke-width="2" transform="rotate(15 320 205)"/>
+  <text x="300" y="200" font-family="Arial" font-size="12" fill="#FF6B6B" transform="rotate(15 320 205)">For You</text>
+  
+  <!-- ハート -->
+  <path d="M320 205 C320 202, 322 200, 325 200 C328 200, 330 202, 330 205 C330 202, 332 200, 335 200 C338 200, 340 202, 340 205 Q340 215, 330 220 Q320 215, 320 205 Z" fill="#FF6B6B" transform="rotate(15 320 205)"/>
+</svg>

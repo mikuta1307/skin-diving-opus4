@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- 左フィン -->
+  <path d="M20 20 L20 65 Q20 80, 30 85 L35 85 Q45 80, 45 65 L45 20 Q45 10, 32.5 10 Q20 10, 20 20 Z" fill="#2196F3" stroke="#0066CC" stroke-width="3"/>
+  
+  <!-- 右フィン -->
+  <path d="M55 20 L55 65 Q55 80, 65 85 L70 85 Q80 80, 80 65 L80 20 Q80 10, 67.5 10 Q55 10, 55 20 Z" fill="#2196F3" stroke="#0066CC" stroke-width="3"/>
+  
+  <!-- フィンのライン（デザイン） -->
+  <line x1="25" y1="30" x2="40" y2="30" stroke="#0066CC" stroke-width="2" opacity="0.6"/>
+  <line x1="25" y1="40" x2="40" y2="40" stroke="#0066CC" stroke-width="2" opacity="0.6"/>
+  <line x1="25" y1="50" x2="40" y2="50" stroke="#0066CC" stroke-width="2" opacity="0.6"/>
+  
+  <line x1="60" y1="30" x2="75" y2="30" stroke="#0066CC" stroke-width="2" opacity="0.6"/>
+  <line x1="60" y1="40" x2="75" y2="40" stroke="#0066CC" stroke-width="2" opacity="0.6"/>
+  <line x1="60" y1="50" x2="75" y2="50" stroke="#0066CC" stroke-width="2" opacity="0.6"/>
+  
+  <!-- ストラップ部分 -->
+  <rect x="25" y="15" width="15" height="8" rx="4" fill="#1976D2"/>
+  <rect x="60" y="15" width="15" height="8" rx="4" fill="#1976D2"/>
+</svg>

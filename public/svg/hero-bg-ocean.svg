@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- 海のグラデーション -->
+    <linearGradient id="oceanGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E3F2FD;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#BBDEFB;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#90CAF9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#42A5F5;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 光のグラデーション -->
+    <radialGradient id="lightGradient" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.5" />
+      <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- 波のパターン -->
+    <pattern id="wavePattern" x="0" y="0" width="200" height="100" patternUnits="userSpaceOnUse">
+      <path d="M0,50 Q50,30 100,50 T200,50" stroke="#FFFFFF" stroke-width="0.5" fill="none" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1440" height="800" fill="url(#oceanGradient)"/>
+  
+  <!-- 光の演出 -->
+  <ellipse cx="720" cy="0" rx="800" ry="400" fill="url(#lightGradient)"/>
+  
+  <!-- 水中の光線 -->
+  <g opacity="0.3">
+    <path d="M200,0 L150,800" stroke="#FFFFFF" stroke-width="20" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M400,0 L380,800" stroke="#FFFFFF" stroke-width="15" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M600,0 L590,800" stroke="#FFFFFF" stroke-width="25" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M900,0 L920,800" stroke="#FFFFFF" stroke-width="18" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M1200,0 L1250,800" stroke="#FFFFFF" stroke-width="22" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="5.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- 波のパターン適用 -->
+  <rect width="1440" height="800" fill="url(#wavePattern)" opacity="0.5"/>
+  
+  <!-- 泡のアニメーション -->
+  <g>
+    <circle cx="300" cy="700" r="4" fill="#FFFFFF" opacity="0.6">
+      <animate attributeName="cy" from="700" to="-50" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0.6;0" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="750" r="3" fill="#FFFFFF" opacity="0.5">
+      <animate attributeName="cy" from="750" to="-50" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0.5;0" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="680" r="5" fill="#FFFFFF" opacity="0.7">
+      <animate attributeName="cy" from="680" to="-50" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0.7;0" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="720" r="3.5" fill="#FFFFFF" opacity="0.6">
+      <animate attributeName="cy" from="720" to="-50" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0.6;0" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1100" cy="690" r="4.5" fill="#FFFFFF" opacity="0.5">
+      <animate attributeName="cy" from="690" to="-50" dur="9.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0.5;0" dur="9.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- 魚のシルエット -->
+  <g opacity="0.15">
+    <g transform="translate(100, 400)">
+      <ellipse cx="0" cy="0" rx="30" ry="15" fill="#1976D2"/>
+      <polygon points="25,0 40,-8 40,8" fill="#1976D2"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 50,20; 0,0" dur="15s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(1300, 300)">
+      <ellipse cx="0" cy="0" rx="25" ry="12" fill="#1565C0"/>
+      <polygon points="22,0 35,-6 35,6" fill="#1565C0"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0; -60,-15; 0,0" dur="18s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  
+  <!-- 深さのグラデーション（下部を暗く） -->
+  <rect y="600" width="1440" height="200" fill="url(#depthGradient)" opacity="0.5"/>
+  <defs>
+    <linearGradient id="depthGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1565C0;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#0D47A1;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+</svg>

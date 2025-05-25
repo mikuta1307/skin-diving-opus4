@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- 柔らかい背景 -->
+  <ellipse cx="100" cy="100" rx="95" ry="85" fill="#E1F5FE" opacity="0.4"/>
+  <circle cx="100" cy="100" r="70" fill="#B3E5FC" opacity="0.3"/>
+  
+  <!-- ソフトシリコンマスク -->
+  <g transform="translate(100, 70)">
+    <path d="M-32 -12 Q-32 -20, -24 -20 L24 -20 Q32 -20, 32 -12 L32 12 Q32 20, 24 20 L-24 20 Q-32 20, -32 12 Z" 
+          fill="#00ACC1" stroke="#00838F" stroke-width="2"/>
+    <rect x="-22" y="-8" width="14" height="18" rx="4" fill="#4DD0E1" opacity="0.7"/>
+    <rect x="8" y="-8" width="14" height="18" rx="4" fill="#4DD0E1" opacity="0.7"/>
+    <!-- ソフト感を表現 -->
+    <path d="M-25 -15 Q-20 -18, -15 -15" fill="none" stroke="#80DEEA" stroke-width="2" stroke-linecap="round"/>
+    <path d="M15 -15 Q20 -18, 25 -15" fill="none" stroke="#80DEEA" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- 快適スノーケル -->
+  <g transform="translate(50, 105)">
+    <rect x="-5" y="-20" width="10" height="40" rx="5" fill="#00ACC1" stroke="#00838F" stroke-width="2"/>
+    <ellipse cx="0" cy="-25" rx="8" ry="7" fill="#26C6DA" stroke="#00838F" stroke-width="2"/>
+    <!-- マウスピース快適マーク -->
+    <ellipse cx="0" cy="20" rx="12" ry="6" fill="#4DD0E1" opacity="0.5"/>
+  </g>
+  
+  <!-- 柔らかフィン -->
+  <g transform="translate(135, 125)">
+    <path d="M-12 -25 Q-12 -28, -10 -28 L-10 18 Q-10 25, -5 25 L-2 25 Q3 25, 3 18 L3 -28 Q3 -28, 1 -28" 
+          fill="#00ACC1" stroke="#00838F" stroke-width="2"/>
+    <path d="M8 -25 Q8 -28, 10 -28 L10 18 Q10 25, 15 25 L18 25 Q23 25, 23 18 L23 -28 Q23 -28, 21 -28" 
+          fill="#00ACC1" stroke="#00838F" stroke-width="2"/>
+    <!-- 柔軟性の波線 -->
+    <path d="M-10 0 Q-6 2, -2 0 T3 0" fill="none" stroke="#4DD0E1" stroke-width="1.5"/>
+    <path d="M10 0 Q14 2, 18 0 T23 0" fill="none" stroke="#4DD0E1" stroke-width="1.5"/>
+  </g>
+  
+  <!-- キャリーバッグ -->
+  <g transform="translate(160, 160)">
+    <rect x="-20" y="-15" width="40" height="25" rx="5" fill="#795548" stroke="#5D4037" stroke-width="2"/>
+    <rect x="-15" y="-18" width="30" height="3" rx="1.5" fill="#5D4037"/>
+    <path d="M-10 -18 Q-10 -22, -6 -22 L6 -22 Q10 -22, 10 -18" fill="none" stroke="#5D4037" stroke-width="2"/>
+  </g>
+  
+  <!-- 快適バッジ -->
+  <g transform="translate(40, 40)">
+    <rect x="-25" y="-10" width="50" height="20" rx="10" fill="#00BCD4"/>
+    <text x="0" y="4" text-anchor="middle" fill="white" font-family="Arial" font-size="9" font-weight="bold">快適重視</text>
+  </g>
+  
+  <!-- 1年保証マーク -->
+  <g transform="translate(40, 160)">
+    <circle cx="0" cy="0" r="15" fill="#4CAF50"/>
+    <text x="0" y="0" text-anchor="middle" fill="white" font-family="Arial" font-size="8" font-weight="bold">1年</text>
+    <text x="0" y="8" text-anchor="middle" fill="white" font-family="Arial" font-size="6">保証</text>
+  </g>
+</svg>

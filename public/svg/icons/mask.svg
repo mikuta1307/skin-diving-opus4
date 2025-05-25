@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <path d="M20 35 Q20 20, 35 20 L65 20 Q80 20, 80 35 L80 55 Q80 70, 65 70 L35 70 Q20 70, 20 55 Z" fill="#1E88E5" stroke="#0066CC" stroke-width="3"/>
+  <rect x="30" y="35" width="15" height="25" rx="5" fill="#90CAF9"/>
+  <rect x="55" y="35" width="15" height="25" rx="5" fill="#90CAF9"/>
+  <path d="M45 45 Q50 50, 55 45" fill="none" stroke="#0066CC" stroke-width="2"/>
+  <!-- ストラップ -->
+  <path d="M20 45 Q10 45, 10 35" fill="none" stroke="#0066CC" stroke-width="3" stroke-linecap="round"/>
+  <path d="M80 45 Q90 45, 90 35" fill="none" stroke="#0066CC" stroke-width="3" stroke-linecap="round"/>
+</svg>
