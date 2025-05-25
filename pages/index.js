@@ -30,9 +30,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>スキンダイビング スターターセット | 初心者向け装備ガイド</title>
-        <meta name="description" content="スキンダイビング初心者に最適な厳選スターターセット。プロが選んだマスク・スノーケル・フィンのセットを紹介。失敗しない装備選びのポイントも解説。" />
+        <title>スキンダイビング スターターセット | デモサイト</title>
+        <meta name="description" content="これはポートフォリオ用のデモサイトです。実際の商品販売は行っておりません。" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="googlebot" content="noindex, nofollow" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
