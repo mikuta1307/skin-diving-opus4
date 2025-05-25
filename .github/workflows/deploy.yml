@@ -36,7 +36,10 @@ jobs:
       
       - name: Build & Export
         run: npm run deploy
-      
+        
+      - name: Fix asset paths
+        run: node scripts/fix-paths.js
+        
       - name: Disable Jekyll
         run: echo "" > ./out/.nojekyll
 
