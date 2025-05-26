@@ -10,7 +10,7 @@ function walk(dir) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       walk(full);
-    } else if (entry.name.endsWith('.html') || entry.name.endsWith('.js')) {
+    } else if (entry.name.endsWith('.html') || entry.name.endsWith('.js') || entry.name.endsWith('.css')) {
       let content = fs.readFileSync(full, 'utf8');
 
       // HTML: src="/svg/..."
