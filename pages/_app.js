@@ -1,9 +1,9 @@
-import '../public/styles/global.css';
-import '../public/styles/header.css';
-import '../public/styles/hero.css';
-import '../public/styles/content.css';
-import '../public/styles/products.css';
-import '../public/styles/modal.css';
+import '../styles/global.css';
+import '../styles/header.css';
+import '../styles/hero.css';
+import '../styles/content.css';
+import '../styles/products.css';
+import '../styles/modal.css';
 import { TargetProvider } from '../lib/context/TargetContext';
 
 function MyApp({ Component, pageProps }) {
