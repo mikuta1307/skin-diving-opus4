@@ -7,8 +7,8 @@ const nextConfig = {
   images: { unoptimized: true },
 
   // ★ GitHub Pages 用に追加
-  basePath: '/skin-diving-opus4',
-  assetPrefix: isProd ? '/skin-diving-opus4/' : '',
+  basePath: isGitHub ? '/skin-diving-opus4' : '',
+  assetPrefix: isGitHub ? '/skin-diving-opus4/' : '',
 };
 
 module.exports = nextConfig;
