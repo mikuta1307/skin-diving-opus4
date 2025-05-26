@@ -33,9 +33,18 @@ jobs:
 #
 #      - name: Export static files
 #        run: npm run export                    # ← Next.js の `next export` 等
-      
-      - name: Build & Export
-        run: npm run deploy
+#      
+#      - name: Build & Export
+#        run: npm run deploy
+
+      - name: Build and Export
+        run: |
+          export TARGET_ENV=github
+          export NEXT_PUBLIC_BASE_PATH=/skin-diving-opus4
+          npm run build
+          npm run export
+          node fix-paths.js
+          touch out/.nojekyll
         
       - name: Fix asset paths
         run: node scripts/fix-paths.js
