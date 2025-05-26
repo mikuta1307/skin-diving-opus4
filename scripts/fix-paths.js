@@ -13,11 +13,13 @@ function walk(dir) {
     } else if (entry.name.endsWith('.html') || entry.name.endsWith('.js') || entry.name.endsWith('.css')) {
       let content = fs.readFileSync(full, 'utf8');
 
-      // HTML: src="/svg/..."
-      content = content.replace(/(src|href)=["']\/(?!skin-diving-opus4\/)/g, `$1="${BASE_PATH}/`);
-
-      // JS: 'image': '/svg/...'
-      content = content.replace(/(['"`])\/(svg|images|styles|_next|favicon)/g, `$1${BASE_PATH}/$2`);
+      // CSS や JS、HTML中のあらゆる `'`, `"`, `(`, `=` の直後のパスを補正
+      content = content.replace(/(['"(=])\/(svg|images|styles|_next|favicon)/g, `$1${BASE_PATH}/$2`);
+//      // HTML: src="/svg/..."
+//      content = content.replace(/(src|href)=["']\/(?!skin-diving-opus4\/)/g, `$1="${BASE_PATH}/`);
+//
+//      // JS: 'image': '/svg/...'
+//      content = content.replace(/(['"`])\/(svg|images|styles|_next|favicon)/g, `$1${BASE_PATH}/$2`);
 
       fs.writeFileSync(full, content, 'utf8');
       console.log(`✅ Patched: ${full}`);
