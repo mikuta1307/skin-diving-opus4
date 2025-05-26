@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
+const isGitHub = process.env.TARGET_ENV === 'github';
 
 const nextConfig = {
   output: 'export',
