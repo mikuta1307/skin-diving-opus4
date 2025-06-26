@@ -1,26 +1,30 @@
-# robots.txt for demo site
+## robots.txt for demo site
+#User-agent: *
+#Disallow: /
+#
+## Specific crawlers
+#User-agent: Googlebot
+#Disallow: /
+#
+#User-agent: Bingbot
+#Disallow: /
+#
+#User-agent: Slurp
+#Disallow: /
+#
+#User-agent: DuckDuckBot
+#Disallow: /
+#
+#User-agent: Baiduspider
+#Disallow: /
+#
+## Prevent archiving
+#User-agent: ia_archiver
+#Disallow: /
+#
+#User-agent: Wayback Machine
+#Disallow: /
+
+# 新しい許可設定
 User-agent: *
-Disallow: /
-
-# Specific crawlers
-User-agent: Googlebot
-Disallow: /
-
-User-agent: Bingbot
-Disallow: /
-
-User-agent: Slurp
-Disallow: /
-
-User-agent: DuckDuckBot
-Disallow: /
-
-User-agent: Baiduspider
-Disallow: /
-
-# Prevent archiving
-User-agent: ia_archiver
-Disallow: /
-
-User-agent: Wayback Machine
-Disallow: /
+Allow: /
